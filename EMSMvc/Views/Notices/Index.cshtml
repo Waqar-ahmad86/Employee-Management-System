@@ -1,0 +1,56 @@
+﻿@using EMSMvc.Core.Application.DTOs
+@model IEnumerable<Notice>
+
+@{
+    ViewData["Title"] = "Notices";
+}
+
+<h2 class="mb-4 fw-bold">@ViewData["Title"]</h2>
+
+<partial name="_StatusMessages" />
+
+@if (Model != null && Model.Any())
+{
+    <div class="list-group">
+        @foreach (var notice in Model)
+        {
+            <div class="list-group-item list-group-item-action flex-column align-items-start mb-3 shadow-sm notice-card @(notice.IsActive ? "" : "notice-inactive")">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">@notice.Title</h5>
+                    <small class="text-muted">
+                        @notice.CreatedAt.ToString("dd MMM yyyy, HH:mm")
+                        @if (notice.ExpiresAt.HasValue)
+                        {
+                            <br />
+
+                            <span class="text-danger">Expires: @notice.ExpiresAt.Value.ToString("dd MMM yyyy, HH:mm")</span>
+                        }
+                    </small>
+                </div>
+                <p class="mb-1 notice-content">@Html.Raw(notice.Content)</p>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <div class="alert alert-info">There are no active notices at the moment.</div>
+}
+
+@section Styles {
+    <style>
+        .notice-card {
+            border-left: 5px solid #007bff;
+            border-radius: .3rem;
+        }
+
+            .notice-card.notice-inactive {
+                border-left-color: #6c757d;
+                opacity: 0.7;
+            }
+
+        .notice-content {
+            white-space: pre-wrap; /* Preserve whitespace and newlines */
+        }
+    </style>
+}

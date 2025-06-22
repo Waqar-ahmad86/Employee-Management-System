@@ -1,0 +1,122 @@
+﻿@using EMS.Common.Enums
+@model EMSMvc.ViewModels.LeaveApprovalVM
+@{
+    ViewData["Title"] = "Review Leave Application";
+    bool isReadOnly = Model.ApplicationDetails?.Status != LeaveApplicationStatus.Pending;
+}
+
+<h2 class="mb-4 fw-bold">Review Leave Application</h2>
+
+<hr />
+<partial name="_StatusMessages" />
+
+@if (Model.ApplicationDetails != null)
+{
+    <div class="card shadow-sm mb-4">
+        <div class="card-header">
+            <h5 class="mb-0">Application Detail</h5>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">Name:</dt>
+                <dd class="col-sm-9">@Model.ApplicationDetails.ApplicantName</dd>
+
+                <dt class="col-sm-3">Leave Type:</dt>
+                <dd class="col-sm-9">@Model.ApplicationDetails.LeaveTypeName</dd>
+
+                <dt class="col-sm-3">Dates:</dt>
+                <dd class="col-sm-9">
+                    @Model.ApplicationDetails.StartDate.ToString("dd-MM-yyyy")
+                    to
+                    @Model.ApplicationDetails.EndDate.ToString("dd-MM-yyyy")
+                    <span class="badge bg-info text-dark">
+                        (@Model.ApplicationDetails.NumberOfDays @((Model.ApplicationDetails.NumberOfDays == 1) ? "Day" : "Days"))
+                    </span>
+                </dd>
+
+                <dt class="col-sm-3">Reason:</dt>
+                <dd class="col-sm-9">@Model.ApplicationDetails.Reason</dd>
+
+                <dt class="col-sm-3">Applied On:</dt>
+                <dd class="col-sm-9">@Model.ApplicationDetails.AppliedDate.ToString("dd-MM-yyyy hh:mm tt")</dd>
+
+                <dt class="col-sm-3">Current Status:</dt>
+                <dd class="col-sm-9"><span class="badge bg-@GetStatusBadgeClass(Model.ApplicationDetails.Status)">@Model.ApplicationDetails.StatusString</span></dd>
+
+                @if (Model.ApplicationDetails.Status != LeaveApplicationStatus.Pending)
+                {
+                    <dt class="col-sm-3">Action By:</dt>
+                    <dd class="col-sm-9">@(Model.ApplicationDetails.ApprovedByUserName ?? "N/A")</dd>
+
+                    <dt class="col-sm-3">Action Date:</dt>
+                    <dd class="col-sm-9">
+                        @(Model.ApplicationDetails.ActionDate.HasValue
+                            ? Model.ApplicationDetails.ActionDate.Value.ToString("dd-MM-yyyy hh:mm tt")
+                            : "N/A")
+                    </dd>
+
+                    <dt class="col-sm-3">Admin Remarks:</dt>
+                    <dd class="col-sm-9">@(Model.ApplicationDetails.AdminRemarks ?? "N/A")</dd>
+                }
+            </dl>
+        </div>
+    </div>
+
+    @if (!isReadOnly)
+    {
+        <div class="card shadow-sm">
+            <div class="card-header">
+                <h5 class="mb-0">Take Action</h5>
+            </div>
+            <div class="card-body">
+                <form asp-action="Review" method="post">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" asp-for="LeaveApplicationId" />
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="NewStatus" class="form-label"></label>
+                        <select asp-for="NewStatus" class="form-select">
+                            <option value="@LeaveApplicationStatus.Approved">Approve</option>
+                            <option value="@LeaveApplicationStatus.Rejected">Reject</option>
+                        </select>
+                        <span asp-validation-for="NewStatus" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="AdminRemarks" class="form-label"></label>
+                        <textarea asp-for="AdminRemarks" class="form-control" rows="3"></textarea>
+                        <span asp-validation-for="AdminRemarks" class="text-danger"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <a asp-action="Manage" class="btn btn-secondary">Back to List</a>
+                </form>
+            </div>
+        </div>
+    }
+    else
+    {
+        <a asp-action="Manage" class="btn btn-secondary">Back to List</a>
+    }
+}
+else
+{
+    <div class="alert alert-danger">Could not load application details.</div>
+    <a asp-action="Manage" class="btn btn-secondary">Back to List</a>
+}
+
+
+@{
+    string GetStatusBadgeClass(LeaveApplicationStatus status)
+    {
+        return status switch
+        {
+            LeaveApplicationStatus.Pending => "warning text-dark",
+            LeaveApplicationStatus.Approved => "success",
+            LeaveApplicationStatus.Rejected => "danger",
+            LeaveApplicationStatus.Cancelled => "secondary",
+            _ => "light text-dark",
+        };
+    }
+}

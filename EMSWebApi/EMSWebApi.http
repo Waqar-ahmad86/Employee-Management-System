@@ -1,0 +1,6 @@
+@EMSWebApi_HostAddress = http://localhost:5156
+
+GET {{EMSWebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

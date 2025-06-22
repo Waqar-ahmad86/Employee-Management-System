@@ -1,0 +1,22 @@
+﻿@using EMSMvc.Core.Application.DTOs
+@model IEnumerable<Notification>
+@{
+    int unreadCount = ViewBag.UnreadNotificationCount ?? 0;
+}
+
+<li class="nav-item dropdown me-2" id="notificationBellContainer">
+    <a class="nav-link notification-bell-link" href="#" id="notificationBell" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fas fa-bell"></i>
+        <span class="badge rounded-pill bg-danger notification-badge" id="notificationBadge" style="@(unreadCount > 0 ? "" : "display:none;")">@unreadCount</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end notification-dropdown-menu" id="notificationDropdownMenu" aria-labelledby="notificationBell">
+        <li><h6 class="dropdown-header">Notifications</h6></li>
+        <li><hr class="dropdown-divider"></li>
+
+        <partial name="_NotificationDropdownItems" model="Model" />
+
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item text-center small text-primary" asp-controller="Notifications" asp-action="Index">View All Notifications</a></li>
+        <li><a class="dropdown-item text-center small" href="#" id="markAllNotificationsAsRead">Mark all as read</a></li>
+    </ul>
+</li>

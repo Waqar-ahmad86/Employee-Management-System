@@ -1,0 +1,88 @@
+﻿@using EMSMvc.Core.Application.DTOs
+@model IEnumerable<Notification>
+@{
+    ViewData["Title"] = "My Notifications";
+    int unreadCount = ViewBag.UnreadCount ?? 0;
+}
+
+<h2 class="mb-3 fw-bold">@ViewData["Title"]</h2>
+<p>You have @unreadCount unread notification(s).</p>
+
+<partial name="_StatusMessages" />
+
+@if (unreadCount > 0)
+{
+    <form asp-action="MarkAllAsRead" asp-controller="Notifications" method="post" class="mb-3">
+        @Html.AntiForgeryToken()
+        <button type="submit" class="btn btn-sm btn-outline-primary">Mark All as Read</button>
+    </form>
+}
+
+
+@if (Model != null && Model.Any())
+{
+    <div class="list-group notification-list-page">
+        @foreach (var notification in Model)
+        {
+            <a href="@(string.IsNullOrEmpty(notification.Link) ? "#" : Url.Content(notification.Link))"
+               class="list-group-item list-group-item-action notification-item-page @(notification.IsRead ? "" : "list-group-item-warning unread")"
+               data-notification-id="@notification.Id">
+                <div class="d-flex w-100 justify-content-between">
+                    <p class="mb-1 @(notification.IsRead ? "" : "fw-bold")">@Html.Raw(notification.Message)</p>
+                    <small class="text-muted time-ago-sm">@notification.TimeAgo</small>
+                </div>
+                <small class="text-muted">Received: @notification.CreatedAt.ToString("dd MMM yyyy, hh:mm tt")</small>
+                @if (!notification.IsRead)
+                {
+                    <form asp-action="MarkAsRead" asp-controller="Notifications" asp-route-id="@notification.Id" method="post" class="d-inline mark-as-read-form-inline float-end">
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="btn btn-sm btn-link p-0 ms-2 mark-as-read-link-btn" title="Mark as read">
+                            <i class="fas fa-check-circle"></i>
+                        </button>
+                    </form>
+                }
+            </a>
+        }
+    </div>
+}
+else
+{
+    <div class="alert alert-info">You have no notifications.</div>
+}
+
+@section Styles {
+    <style>
+        .notification-list-page .list-group-item-warning.unread {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+        }
+
+        .notification-list-page .notification-item-page {
+            margin-bottom: 10px;
+            border-radius: .25rem;
+        }
+
+        .time-ago-sm {
+            font-size: 0.8em;
+        }
+
+        .mark-as-read-form-inline {
+            display: inline;
+        }
+
+        .mark-as-read-link-btn {
+            color: #0d6efd;
+            text-decoration: none;
+        }
+
+            .mark-as-read-link-btn:hover {
+                color: #0a58ca;
+            }
+    </style>
+}
+
+@section Scripts {
+    <script>
+
+    </script>
+}

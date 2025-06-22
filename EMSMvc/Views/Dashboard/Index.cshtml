@@ -1,0 +1,225 @@
+﻿@using Newtonsoft.Json
+@using EMSMvc.Core.Application.DTOs
+@{
+    ViewData["Title"] = "Dashboard";
+    var overview = ViewBag.OverviewData as AdminDashboardOverview;
+    var departmentChartData = ViewBag.DepartmentChartData as SimpleChart;
+    var userRoleChartData = ViewBag.UserRoleChartData as SimpleChart;
+    var isUserAdminForScript = (ViewBag.UserRole == "Admin");
+}
+
+<div class="container-fluid">
+    <h2 class="mb-2 fw-bold">Dashboard</h2>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item active fw-bold">Welcome, @ViewBag.FullName</li>
+    </ol>
+
+    <div class="row">
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                Employees
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">Manage</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-users fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                    <a asp-controller="Employee" asp-action="Index" class="stretched-link"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                My Profile
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">View/Edit</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-user-circle fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                    <a asp-controller="UserManagement" asp-action="Profile" class="stretched-link"></a>
+                </div>
+            </div>
+        </div>
+
+        @if (ViewBag.UserRole == "Admin")
+        {
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-success shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                    Add Employee
+                                </div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">New Record</div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-user-plus fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                        <a asp-controller="Employee" asp-action="CreateEmployee" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+
+    @* SYSTEM OVERVIEW SECTION *@
+    @if (ViewBag.UserRole == "Admin" && overview != null)
+    {
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h6 class="m-0 font-weight-bold text-primary">
+                            <i class="fas fa-chart-line me-2"></i>System Overview
+                        </h6>
+                    </div>
+                    <div class="card-body">
+                        @* Stat Cards *@
+                        <div class="row">
+                            <div class="col-xl-3 col-md-6 mb-4">
+                                <div class="card border-left-info shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-2">
+                                                <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                                    Active System Users
+                                                </div>
+                                                <div class="h5 mb-0 font-weight-bold text-gray-800">@overview.TotalActiveUsers</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <i class="fas fa-user-check fa-2x text-gray-300"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-md-6 mb-4">
+                                <div class="card border-left-success shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-2">
+                                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                    Total Employee Records
+                                                </div>
+                                                <div class="h5 mb-0 font-weight-bold text-gray-800">@overview.TotalEmployees</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <i class="fas fa-id-card-alt fa-2x text-gray-300"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-md-6 mb-4">
+                                <div class="card border-left-warning shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-2">
+                                                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                                    Checked-In Today
+                                                </div>
+                                                <div class="h5 mb-0 font-weight-bold text-gray-800">@overview.UsersCheckedInToday</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <i class="fas fa-calendar-check fa-2x text-gray-300"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        @* Charts Section *@
+                        <div class="row">
+                            <div class="col-lg-6 mb-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-bar me-1"></i>
+                                        Employees by Department
+                                    </div>
+                                    <div class="card-body">
+                                        @if (departmentChartData != null && departmentChartData.Labels.Any())
+                                        {
+                                            <canvas id="departmentBarChart" width="100%" height="200"></canvas>
+                                        }
+                                        else if (ViewBag.UserRole == "Admin")
+                                        {
+                                            <p class="text-muted text-center mt-2">No department data available to display chart.</p>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-pie me-1"></i>
+                                        User Roles Distribution
+                                    </div>
+                                    <div class="card-body">
+                                        @if (userRoleChartData != null && userRoleChartData.Labels.Any())
+                                        {
+                                            <canvas id="userRolesPieChart" width="100%" height="200"></canvas>
+                                        }
+                                        else if (ViewBag.UserRole == "Admin")
+                                        {
+                                            <p class="text-muted text-center mt-2">No user role data available to display chart.</p>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    @* For Users Panel *@
+    @* else if (ViewBag.UserRole != "Admin")
+    {
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">Welcome!</h6>
+                    </div>
+                    <div class="card-body">
+                        <p>Use the sidebar to navigate to your attendance and profile.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    } *@
+</div>
+
+<link rel="stylesheet" href="~/css/dashboard.css" />
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var dashboardChartData = {
+            departmentData: @Html.Raw(departmentChartData != null ? JsonConvert.SerializeObject(departmentChartData) : "null"),
+            userRoleData: @Html.Raw(userRoleChartData != null ? JsonConvert.SerializeObject(userRoleChartData) : "null")
+        };
+        var isUserAdmin = @isUserAdminForScript.ToString().ToLower();
+    </script>
+    <script src="~/js/dashboard.js" asp-append-version="true"></script>
+}

@@ -1,0 +1,93 @@
+﻿:root {
+    --profile-header-bg: #4e73df;
+    --profile-header-text: #ffffff;
+    --profile-label-color: #5a5c69;
+    --profile-value-color: #2c3e50; 
+    --profile-card-bg: #ffffff;
+    --profile-list-item-border: #e3e6f0;
+}
+
+.profile-page-container {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.profile-card {
+    border: none; 
+    border-radius: 0.75rem;
+    background-color: var(--profile-card-bg);
+}
+
+.profile-card-header {
+    background-color: var(--profile-header-bg);
+    color: var(--profile-header-text);
+    padding: 1.5rem 1rem;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.profile-header-icon {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.profile-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.profile-card-body {
+    padding: 2rem;
+}
+
+.profile-details-list .list-group-item {
+    background-color: transparent;
+    border-color: var(--profile-list-item-border);
+    padding: 1rem 0.5rem;
+}
+
+    .profile-details-list .list-group-item:first-child {
+        border-top: none;
+    }
+    .profile-details-list .list-group-item:last-child {
+        border-bottom: none;
+    }
+
+
+.profile-detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.profile-detail-label {
+    font-weight: 500;
+    color: var(--profile-label-color);
+    display: inline-flex; 
+    align-items: center;
+}
+
+.profile-detail-label i.fa-fw {
+    color: var(--profile-header-bg);
+    opacity: 0.8;
+}
+
+.profile-detail-value {
+    color: var(--profile-value-color);
+    text-align: right;
+}
+
+.profile-role-badge {
+    background-color: #1cc88a;
+    color: white;
+    padding: 0.3em 0.6em;
+    border-radius: 0.25rem;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.profile-actions {
+    margin-top: 1.5rem;
+}

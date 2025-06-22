@@ -1,0 +1,114 @@
+﻿@using System.Globalization
+@model EMSMvc.ViewModels.MonthlyReportRequestVM
+@{
+    ViewData["Title"] = "Monthly Attendance Report";
+}
+
+<h2 class="mb-3 fw-bold">Monthly Attendance Report</h2>
+
+<partial name="_StatusMessages" />
+
+<form asp-action="MonthlyReport" method="post" id="reportForm" class="row g-3 mb-4 align-items-end">
+    @Html.AntiForgeryToken()
+    <div class="col-md-3">
+        <label asp-for="Year" class="form-label"></label>
+        <select asp-for="Year" asp-items="Model.Years" class="form-select" id="reportYear"></select>
+    </div>
+    <div class="col-md-3">
+        <label asp-for="Month" class="form-label"></label>
+        <select asp-for="Month" asp-items="Model.Months" class="form-select" id="reportMonth"></select>
+    </div>
+    <div class="col-md-2">
+        <label asp-for="RoleName" class="form-label"></label>
+        <select asp-for="RoleName" asp-items="Model.Roles" class="form-select" id="reportRoleName">
+            <option value="">All Roles</option>
+        </select>
+    </div>
+
+    <div class="col-md-1 mx-3">
+        <button type="submit" class="btn btn-primary w-102">Generate</button>
+    </div>
+    <div class="col-md-1 mx-3">
+        @if (Model.ReportData != null && Model.ReportData.Any())
+        {
+            <button type="button" id="downloadPdfButton" class="btn btn-danger w-100" title="Download PDF">
+                <i class="fas fa-file-pdf"></i>
+            </button>
+        }
+    </div>
+</form>
+
+@if (Model.ReportData != null)
+{
+    if (Model.ReportData.Any())
+    {
+        <div class="d-flex justify-content-between align-items-center mt-4">
+            <h4>
+                Report for @CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(Model.Month), @Model.Year
+                @if (!string.IsNullOrEmpty(Model.Name) || !string.IsNullOrEmpty(Model.RoleName))
+                {
+                    <small class="text-muted fs-6">
+                        (Filtered by:
+                        @if (!string.IsNullOrEmpty(Model.Name))
+                        {
+                            @:name "@Model.Name"
+                        }
+                        @if (!string.IsNullOrEmpty(Model.Name) && !string.IsNullOrEmpty(Model.RoleName))
+                        {
+                            @:and
+                        }
+                        @if (!string.IsNullOrEmpty(Model.RoleName))
+                        {
+                            @:role "@Model.RoleName"
+                        }
+                        )
+                    </small>
+                }
+            </h4>
+        </div>
+
+        <table id="monthlyReportTable" class="table table-striped table-bordered table-sm mt-3">
+            <thead class="table-dark">
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>UserName</th>
+                    <th>Total Days</th>
+                    <th>Working Days</th>
+                    <th>Present</th>
+                    <th>Absent</th>
+                    <th>On Leave</th>
+                    <th>Total Work Hrs</th>
+                    <th>Avg. Work Hrs</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    int srNoMonthly = 1;
+                }
+                @foreach (var item in Model.ReportData)
+                {
+                    <tr>
+                        <td>@(srNoMonthly++)</td>
+                        <td>@item.UserName</td>
+                        <td>@item.TotalDaysInMonth</td>
+                        <td>@item.WorkingDaysInMonth</td>
+                        <td>@item.PresentDays</td>
+                        <td>@item.AbsentDays</td>
+                        <td>@item.LeaveDays</td>
+                        <td>@item.TotalWorkHours.ToString("N2")</td>
+                        <td>@item.AverageWorkHours.ToString("N2")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else if (Context.Request.Method == "POST")
+    {
+        <div class="alert alert-info mt-3">No attendance data found for the selected criteria.</div>
+    }
+}
+
+
+@section Scripts {
+    <script src="~/js/monthly-report.js"></script>
+}

@@ -1,0 +1,106 @@
+﻿@model EMSMvc.ViewModels.AttendanceActionVM
+@{
+    ViewData["Title"] = "My Daily Attendance";
+    bool canCheckIn = Model.TodaysRecord == null || !Model.TodaysRecord.CheckInTime.HasValue;
+    bool canCheckOut = Model.TodaysRecord != null && Model.TodaysRecord.CheckInTime.HasValue && !Model.TodaysRecord.CheckOutTime.HasValue;
+
+    string? utcCheckInTimeFull = null;
+    string? utcCheckOutTimeFull = null;
+    string? recordDateUtc = null;
+
+    if (Model.TodaysRecord != null)
+    {
+        recordDateUtc = Model.TodaysRecord.Date.ToString("yyyy-MM-ddTHH:mm:ssZ");
+        if (Model.TodaysRecord.CheckInTime.HasValue)
+        {
+            utcCheckInTimeFull = Model.TodaysRecord.Date.ToString("yyyy-MM-dd") + "T" + 
+            Model.TodaysRecord.CheckInTime.Value.ToString(@"hh\:mm\:ss") + "Z";
+        }
+        if (Model.TodaysRecord.CheckOutTime.HasValue)
+        {
+            utcCheckOutTimeFull = Model.TodaysRecord.Date.ToString("yyyy-MM-dd") + "T" + 
+            Model.TodaysRecord.CheckOutTime.Value.ToString(@"hh\:mm\:ss") + "Z";
+        }
+    }
+}
+
+<h2 class="mb-4 fw-bold">My Daily Attendance</h2>
+<h6 class="mb-5">
+    Day: <span>@DateTime.Today.ToString("dddd")</span><br />
+    Date: <span>@DateTime.Today.ToString("dd-MM-yyyy")</span>
+</h6>
+<partial name="_StatusMessages" />
+<div class="row">
+    <div class="col-md-6">
+        @if (Model.TodaysRecord != null)
+        {
+            <h4>Today's Status:</h4>
+            <dl class="row">
+                <dt class="col-sm-4">Check-in Time:</dt>
+                <dd class="col-sm-8" id="checkInDisplay">@(Model.TodaysRecord.CheckInTimeString ?? "Not Checked-in")</dd>
+
+                <dt class="col-sm-4">Check-out Time:</dt>
+                <dd class="col-sm-8" id="checkOutDisplay">@(Model.TodaysRecord.CheckOutTimeString ?? "Not Checked-out")</dd>
+
+                <dt class="col-sm-4">Status:</dt>
+                <dd class="col-sm-8">@Model.TodaysRecord.Status</dd>
+
+                @if (Model.TodaysRecord.WorkHours.HasValue)
+                {
+                    var totalMinutes = (int)(Model.TodaysRecord.WorkHours.Value * 60);
+                    var hours = totalMinutes / 60;
+                    var minutes = totalMinutes % 60;
+                    <dt class="col-sm-4">Work Hours:</dt>
+                    <dd class="col-sm-8">@($"{hours} h {minutes} min")</dd>
+                }
+                <dt class="col-sm-4">Remarks:</dt>
+                <dd class="col-sm-8">@(Model.TodaysRecord.Remarks ?? "N/A")</dd>
+            </dl>
+        }
+        else
+        {
+            <div class="alert alert-info">No attendance record for today yet.</div>
+        }
+    </div>
+    <div class="col-md-6">
+        @if (canCheckIn || canCheckOut)
+        {
+            <form method="post">
+                @Html.AntiForgeryToken()
+                <div class="mb-3">
+                    <label asp-for="Remarks" class="form-label"></label>
+                    <textarea asp-for="Remarks" class="form-control" rows="2"></textarea>
+                </div>
+
+                @if (canCheckIn)
+                {
+                    <button type="submit" asp-action="CheckIn" class="btn btn-success me-2">
+                        <i class="fas fa-sign-in-alt"></i> Check In
+                    </button>
+                }
+                @if (canCheckOut)
+                {
+                    <button type="submit" asp-action="CheckOut" class="btn btn-danger">
+                        <i class="fas fa-sign-out-alt"></i> Check Out
+                    </button>
+                }
+            </form>
+        }
+        else if (Model.TodaysRecord != null && Model.TodaysRecord.CheckOutTime.HasValue)
+        {
+            <div class="alert alert-success mt-3">You have completed your attendance for today.</div>
+        }
+    </div>
+</div>
+<hr />
+<a asp-action="MyHistory" class="btn btn-info mt-3">View History</a>
+
+<input type="hidden" id="utcCheckInFull" value="@utcCheckInTimeFull" />
+<input type="hidden" id="utcCheckOutFull" value="@utcCheckOutTimeFull" />
+<input type="hidden" id="recordDateUtc" value="@recordDateUtc" />
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/my-daily-attendance.js"></script>
+}

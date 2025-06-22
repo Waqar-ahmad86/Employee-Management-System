@@ -1,0 +1,54 @@
+﻿@using EMSMvc.Core.Application.DTOs
+@model User
+@{
+    ViewData["Title"] = "User Details";
+}
+
+<h2 class="mb-3 fw-bold">User Details</h2>
+
+<hr />
+<partial name="_StatusMessages" />
+
+<div class="fs-5">
+    <dl class="row">
+        <dt class="col-sm-3">Full Name</dt>
+        <dd class="col-sm-9">@Model.FullName</dd>
+
+        <dt class="col-sm-3">Username</dt>
+        <dd class="col-sm-9">@Model.UserName</dd>
+
+        <dt class="col-sm-3">Email</dt>
+        <dd class="col-sm-9">@Model.Email</dd>
+
+        <dt class="col-sm-3">Email Confirmed</dt>
+        <dd class="col-sm-9">@(Model.EmailConfirmed ? "Yes" : "No")</dd>
+
+        <dt class="col-sm-3">Role</dt>
+        <dd class="col-sm-9">@string.Join(", ", Model.Roles)</dd>
+
+        <dt class="col-sm-3">Account Status</dt>
+        <dd class="col-sm-9">
+            @if (!Model.IsActive)
+            {
+                <span class="badge bg-warning text-dark">Deactivated</span>
+            }
+            else if (Model.IsLocked)
+            {
+                <span class="badge bg-danger">Locked</span>
+                if (Model.LockoutEnd.HasValue)
+                {
+                    <small class="text-muted">(Until: @Model.LockoutEnd.Value.ToString("g"))</small>
+                }
+            }
+            else
+            {
+                <span class="badge bg-success">Active</span>
+            }
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="EditUser" asp-route-id="@Model.Id" class="btn btn-primary">Edit Details</a> |
+    <a asp-action="EditUserRoles" asp-route-id="@Model.Id" class="btn btn-info">Edit Roles</a> |
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>

@@ -1,0 +1,59 @@
+﻿.notification-bell-link {
+    position: relative;
+    color: #6c757d;
+    font-size: 1.25rem;
+}
+
+    .notification-bell-link:hover,
+    .notification-bell-link:focus {
+        color: #343a40;
+    }
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    font-size: 0.65em;
+    padding: 0.25em 0.5em;
+}
+
+.notification-bell-link.has-notifications i {
+}
+
+.notification-dropdown-menu {
+    width: 320px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+    .notification-dropdown-menu .dropdown-header {
+        font-weight: bold;
+        padding: 0.75rem 1rem;
+    }
+
+    .notification-dropdown-menu .dropdown-item {
+        white-space: normal;
+        padding: 0.5rem 1rem;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+        .notification-dropdown-menu .dropdown-item:last-child {
+            border-bottom: none;
+        }
+
+
+    .notification-dropdown-menu .notification-item .small {
+        font-size: 0.85rem;
+        line-height: 1.3;
+    }
+
+    .notification-dropdown-menu .notification-item .text-muted.small {
+        font-size: 0.75rem;
+        margin-top: 0.25rem;
+    }
+
+    .notification-dropdown-menu .notification-item.fw-bold .small {
+        font-weight: 600;
+    }

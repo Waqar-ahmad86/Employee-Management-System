@@ -1,0 +1,21 @@
+﻿@using EMSMvc.Core.Application.DTOs
+@model IEnumerable<Notification>
+
+@if (Model != null && Model.Any())
+{
+    foreach (var notification in Model.Take(5))
+    {
+        <li>
+            <a class="dropdown-item notification-item @(notification.IsRead ? "" : "fw-bold")"
+               href="@(string.IsNullOrEmpty(notification.Link) ? "#" : Url.Content(notification.Link))"
+               data-notification-id="@notification.Id">
+                <div class="small">@Html.Raw(notification.Message)</div>
+                <div class="text-muted small time-ago">@notification.TimeAgo</div>
+            </a>
+        </li>
+    }
+}
+else
+{
+    <li class="no-notifications-item"><span class="dropdown-item text-muted text-center">No new notifications</span></li>
+}

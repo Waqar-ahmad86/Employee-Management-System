@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+@{
+    bool isLoggedIn = Context.Session.GetString("JwtToken") != null;
+    string currentController = ViewContext.RouteData.Values["Controller"]?.ToString();
+    string currentAction = ViewContext.RouteData.Values["Action"]?.ToString();
+    bool isAuthPage = currentController == "Auth" && (currentAction == "Login" || currentAction == "Register");
+    bool showLoginLoaderSpecific = TempData["ShowLoginLoader"] as bool? ?? false;
+    string bodyClass = "";
+    if (isLoggedIn && !isAuthPage) { bodyClass += " body-with-sidebar"; }
+    if (showLoginLoaderSpecific) { bodyClass += " content-hidden-during-load"; }
+
+    string apiJwtTokenForJs = isLoggedIn ? Context.Session.GetString("JwtToken") : "";
+}
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - EMS Portal</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" />
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    @if (isLoggedIn && !isAuthPage)
+    {
+        <link rel="stylesheet" href="~/css/sidebar.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/notifications.css" asp-append-version="true" />
+    }
+    <link rel="stylesheet" href="~/EMSMvc.styles.css" asp-append-version="true" />
+
+    @if (showLoginLoaderSpecific)
+    {
+        <link rel="stylesheet" href="~/css/loader.css" asp-append-version="true" />
+        <style>
+            body.content-hidden-during-load > #page-container > #content-wrapper > *:not(#page-loader-overlay):not(script):not(header):not(footer) {
+                visibility: hidden;
+            }
+
+            body.content-hidden-during-load #sidebar-wrapper,
+            body.content-hidden-during-load #content-wrapper > header,
+            body.content-hidden-during-load #content-wrapper > footer {
+                visibility: visible !important; /* Sidebar and nav/footer should be visible even with loader */
+            }
+        </style>
+        <noscript>
+            <style>
+                #page-loader-overlay {
+                    display: none !important;
+                }
+
+                body.content-hidden-during-load > #page-container > #content-wrapper > *:not(#page-loader-overlay):not(script):not(header):not(footer) {
+                    visibility: visible !important;
+                }
+            </style>
+        </noscript>
+    }
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+
+<body class="@bodyClass">
+    <div id="page-container">
+        @if (isLoggedIn && !isAuthPage)
+        {
+            <div class="sidebar-wrapper" id="sidebar-wrapper">
+                <a class="sidebar-brand" asp-controller="Dashboard" asp-action="Index">
+                    <i class="fas fa-cogs"></i>
+                    <span>EMS Portal</span>
+                </a>
+                <div class="list-group list-group-flush">
+                    <a asp-controller="Dashboard" asp-action="Index" class="list-group-item list-group-item-action">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>Dashboard
+                    </a>
+                    <a asp-controller="Employee" asp-action="Index" class="list-group-item list-group-item-action">
+                        <i class="fas fa-fw fa-users"></i>Employees
+                    </a>
+
+                    @if (Context.Session.GetString("UserRole") == "Admin")
+                    {
+                        <a asp-controller="UserManagement" asp-action="Index" class="list-group-item list-group-item-action">
+                            <i class="fas fa-fw fa-users-cog"></i>User Management
+                        </a>
+                        <a asp-controller="Attendance" asp-action="AllAttendanceReport" class="list-group-item list-group-item-action">
+                            <i class="fas fa-fw fa-clipboard-list"></i>Attendance Report
+                        </a>
+                        <a asp-controller="Attendance" asp-action="MonthlyReport" class="list-group-item list-group-item-action">
+                            <i class="fas fa-fw fa-chart-bar"></i>Monthly Report
+                        </a>
+                        <a asp-controller="Leave" asp-action="Manage" class="list-group-item list-group-item-action">
+                            <i class="fas fa-fw fa-calendar-alt"></i>Manage Leaves
+                        </a>
+                        <a asp-controller="Notices" asp-action="Manage" class="list-group-item list-group-item-action">
+                            <i class="fas fa-fw fa-newspaper"></i>Manage Notices
+                        </a>
+                        <a asp-controller="LeaveTypes" asp-action="Index" class="list-group-item list-group-item-action">
+                            <i class="fas fa-fw fa-tags"></i>Manage Leave Types
+                        </a>
+                    }
+
+                    <a asp-controller="Attendance" asp-action="MyAttendance" class="list-group-item list-group-item-action">
+                        <i class="fas fa-fw fa-calendar-check"></i>Attendance
+                    </a>
+                    <a asp-controller="Leave" asp-action="Apply" class="list-group-item list-group-item-action">
+                        <i class="fas fa-fw fa-file-alt"></i>Apply Leave
+                    </a>
+                    <a asp-controller="Leave" asp-action="MyApplications" class="list-group-item list-group-item-action">
+                        <i class="fas fa-fw fa-history"></i>My Leave History
+                    </a>
+                    <a asp-controller="Notices" asp-action="Index" class="list-group-item list-group-item-action">
+                        <i class="fas fa-fw fa-bullhorn"></i>Notices
+                    </a>
+
+                </div>
+            </div>
+        }
+
+        <div id="content-wrapper">
+            @if (showLoginLoaderSpecific)
+            {
+                <partial name="_Loader" />
+            }
+
+            @if (!isAuthPage)
+            {
+                <header>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom box-shadow">
+                        <div class="container-fluid">
+                            @if (isLoggedIn)
+                            {
+                                <button class="btn btn-link btn-sm order-1 order-lg-0 me-3" id="sidebarToggle" href="#!"><i class="fas fa-bars fa-lg"></i></button>
+                            }
+                            else
+                            {
+                                <a class="navbar-brand" asp-controller="Home" asp-action="Index">EMS</a>
+                            }
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbarCollapse" aria-controls="topNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="topNavbarCollapse">
+                                <ul class="navbar-nav me-auto">
+                                    @if (!isLoggedIn)
+                                    {
+                                        <li class="nav-item">
+                                            <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Home</a>
+                                        </li>
+                                    }
+                                </ul>
+                                <ul class="navbar-nav ms-auto align-items-center">
+                                    @if (isLoggedIn)
+                                    {
+                                        @await Component.InvokeAsync("NotificationBell")
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" 
+                                               id="navbarDropdownUser" 
+                                               href="#" 
+                                               role="button"
+                                               data-bs-toggle="dropdown" 
+                                               aria-expanded="false">
+                                                <i class="fas fa-user fa-fw"></i> @Context.Session.GetString("FullName")
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownUser">
+                                                <li>
+                                                    <a class="dropdown-item" asp-controller="UserManagement" asp-action="Profile">
+                                                    My Profile
+                                                    </a></li>
+                                                <li><hr class="dropdown-divider" /></li>
+                                                <li>
+                                                    <a class="dropdown-item" asp-controller="Auth" asp-action="Logout">
+                                                        Logout
+                                                    </a></li>
+                                            </ul>
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li class="nav-item"><a class="nav-link text-dark" asp-controller="Auth" asp-action="Login">Login</a></li>
+                                        <li class="nav-item"><a class="nav-link text-dark" asp-controller="Auth" asp-action="Register">Register</a></li>
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+            }
+
+            <main role="main" class="page-content-main-area @(isAuthPage ? "container" : "")">
+                @RenderBody()
+            </main>
+
+            @if (!isAuthPage)
+            {
+                <footer class="footer border-top text-muted bg-white position-fixed"
+                        style="bottom: 0; width: 100%; z-index: 1000;">
+                    <div class="container-fluid">
+                        © @DateTime.Now.Year - EMS Portal - <a asp-controller="Home" asp-action="Privacy">Privacy</a>
+                    </div>
+                </footer>
+            }
+        </div>
+    </div>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="~/js/dateTimeUtils.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/latest/signalr.min.js"></script>
+
+    @if (showLoginLoaderSpecific)
+    {
+        <script src="~/js/loader.js" asp-append-version="true"></script>
+    }
+
+    @if (isLoggedIn && !isAuthPage)
+    {
+        <script>
+            $(document).ready(function () {
+                $("#sidebarToggle").on("click", function (e) {
+                    e.preventDefault();
+                    $("body").toggleClass("body-sidebar-toggled");
+                    $("#sidebar-wrapper").toggleClass("toggled");
+                    localStorage.setItem('sidebarToggled', $("#sidebar-wrapper").hasClass("toggled"));
+                });
+
+                if (localStorage.getItem('sidebarToggled') === 'true') {
+                    $("body").addClass("body-sidebar-toggled");
+                    $("#sidebar-wrapper").addClass("toggled");
+                } else {
+                    $("body").removeClass("body-sidebar-toggled");
+                    $("#sidebar-wrapper").removeClass("toggled");
+                }
+
+                var currentPath = window.location.pathname;
+                if (currentPath === "/") {
+                    currentPath = "/Dashboard/Index";
+                }
+                $("#sidebar-wrapper .list-group-item").each(function () {
+                    var linkHref = $(this).attr("href");
+                    if (currentPath.indexOf(linkHref) !== -1 && linkHref !== "/") {
+                        if (currentPath.startsWith(linkHref)) {
+                            $(this).addClass("active");
+                        }
+                    } else if (linkHref === "/" && (currentPath === "/Dashboard" || currentPath === "/Dashboard/Index")) {
+                        $(this).addClass("active");
+                    }
+                });
+                if ((currentPath === "/Dashboard" || currentPath === "/Dashboard/Index" || currentPath === "/") && isLoggedIn && !isAuthPage) {
+                    $('#sidebar-wrapper a[href="/Dashboard/Index"]').addClass('active');
+                     $('#sidebar-wrapper a[href="/Dashboard"]').addClass('active');
+                }
+            });
+        </script>
+    }
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+}

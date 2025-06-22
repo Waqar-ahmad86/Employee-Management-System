@@ -1,0 +1,60 @@
+﻿@using EMSMvc.Core.Application.DTOs
+@model Employee
+
+@{
+    ViewData["Title"] = "Create Employee";
+}
+
+<h2 class="mb-3 fw-bold">Add Employee</h2>
+<form asp-action="CreateEmployee" method="post" class="employee-form">
+    <div class="form-container">
+        @Html.AntiForgeryToken()
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="row">
+            <div class="col-md-6 form-group">
+                <label for="Name" class="form-label">Employee Name</label>
+                <input asp-for="Name" class="form-control" id="Name" required placeholder="Enter employee name" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-6 form-group">
+                <label for="Department" class="form-label">Department</label>
+                <input asp-for="Department" class="form-control" id="Department" required placeholder="Enter department" />
+                <span asp-validation-for="Department" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 form-group">
+                <label asp-for="JobTitle" class="form-label">Job title</label>
+                <input asp-for="JobTitle" class="form-control" placeholder="Enter job title" />
+                <span asp-validation-for="JobTitle" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-6 form-group">
+                <label for="Salary" class="form-label">Salary</label>
+                <input asp-for="Salary" class="form-control" id="Salary" required placeholder="Enter salary" />
+                <span asp-validation-for="Salary" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 form-group">
+                <label asp-for="DateOfJoining" class="form-label"></label>
+                <input asp-for="DateOfJoining" type="date" class="form-control" />
+                <span asp-validation-for="DateOfJoining" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-6 form-group">
+                <label asp-for="ContactNumber" class="form-label">Contact Number</label>
+                <input asp-for="ContactNumber" class="form-control" placeholder="Enter contact number" />
+                <span asp-validation-for="ContactNumber" class="text-danger"></span>
+            </div>
+        </div>
+        
+        <div class="form-actions">
+            <button type="submit" class="btn btn-success btn-lg">Save</button>
+            <a asp-action="Index" class="btn btn-danger btn-lg">Cancel</a>
+        </div>
+    </div>
+</form>

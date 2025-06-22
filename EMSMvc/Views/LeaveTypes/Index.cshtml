@@ -1,0 +1,136 @@
+﻿@using EMSMvc.Core.Application.DTOs
+@model IEnumerable<LeaveType>
+
+@{
+    ViewData["Title"] = "Manage Leave Types";
+    int srNo = 1;
+}
+
+<h2 class="mb-3 fw-bold">@ViewData["Title"]</h2>
+
+<partial name="_StatusMessages" />
+
+<p>
+    <a asp-action="Create" class="button">
+        <span class="button__text">Add New</span>
+        <span class="button__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round"
+                 stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg">
+                <line y2="19" y1="5" x2="12" x1="12"></line>
+                <line y2="12" y1="12" x2="19" x1="5"></line>
+            </svg>
+        </span>
+    </a>
+</p>
+
+<table id="leaveTypesTable" class="table table-striped table-bordered table-sm">
+    <thead class="table-dark">
+        <tr>
+            <th>Sr. No.</th>
+            <th>@Html.DisplayNameFor(model => model.First().Name)</th>
+            <th>@Html.DisplayNameFor(model => model.First().Description)</th>
+            <th>Default Days</th>
+            <th>@Html.DisplayNameFor(model => model.First().IsActive)</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var item in Model)
+            {
+                <tr id="leavetype-row-@item.Id">
+                    <td>@(srNo++)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Description)</td>
+                    <td class="text-center">@(item.DefaultDaysAllowed.HasValue ? item.DefaultDaysAllowed.Value.ToString() : "N/A")</td>
+                    <td class="text-center">
+                        @if (item.IsActive)
+                        {
+                            <span class="badge bg-success">Active</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger">Inactive</span>
+                        }
+                    </td>
+                    <td class="text-center">
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm" title="Edit">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                        <a href="javaScript:void(0);" class="btn btn-danger btn-sm delete-leavetype-btn" data-id="@item.Id" title="Delete">
+                            <i class="fas fa-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="6" class="text-center text-muted">No leave types found.</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@Html.AntiForgeryToken()
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#leaveTypesTable').DataTable({
+                "pageLength": 10,
+                "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+                "columnDefs": [
+                    { "orderable": false, "targets": [0, 5] }
+                ],
+                 "order": [[1, "asc"]] // Order by Name ascending
+            });
+
+            $(document).on('click', '.delete-leavetype-btn', function () {
+                var leaveTypeId = $(this).data('id');
+                Swal.fire({
+                    title: 'Are you sure?',
+                    text: "This action cannot be undone! Deleting a leave type might fail if it's in use.",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#d33',
+                    cancelButtonColor: '#3085d6',
+                    confirmButtonText: 'Yes, delete it!',
+                    cancelButtonText: 'No, cancel!'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        var token = $('input[name="__RequestVerificationToken"]').val();
+                        $.ajax({
+                            url: '@Url.Action("DeleteConfirmed", "LeaveTypes")/' + leaveTypeId,
+                            type: 'POST',
+                            headers: { "RequestVerificationToken": token },
+                            success: function (response) {
+                                if (response.success) {
+                                    Swal.fire({
+                                        title: 'Deleted!',
+                                        text: response.message,
+                                        icon: 'success',
+                                        timer: 2000,
+                                        showConfirmButton: false
+                                    }).then(() => {
+                                        $('#leavetype-row-' + leaveTypeId).fadeOut(function() {
+                                            $(this).remove();
+                                             $('#leaveTypesTable').DataTable().row($(this)).remove().draw(false);
+                                        });
+                                    });
+                                } else {
+                                    Swal.fire('Error!', response.message, 'error');
+                                }
+                            },
+                            error: function (xhr) {
+                                Swal.fire('Error!', 'Failed to delete leave type. ' + xhr.responseText, 'error');
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+}

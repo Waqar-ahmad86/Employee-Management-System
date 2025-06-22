@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "EMSWebApi\\EMSWebApi.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "EMSMvc\\EMSMvc.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

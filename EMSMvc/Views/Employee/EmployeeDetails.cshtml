@@ -1,0 +1,48 @@
+﻿@using EMSMvc.Core.Application.DTOs
+@model Employee
+
+@{
+    ViewData["Title"] = "Employee Details";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-lg rounded-4 border-0">
+                <div class="card-header bg-primary text-white text-center rounded-top-4">
+                    <h3 class="mb-0 fw-bold">Employee Details</h3>
+                </div>
+                <div class="card-body px-4 py-5">
+                    <dl class="row mb-0">
+                        <dt class="col-sm-4 fw-semibold">Employee Name</dt>
+                        <dd class="col-sm-8">@Model.Name</dd>
+
+                        <dt class="col-sm-4 fw-semibold">Department</dt>
+                        <dd class="col-sm-8">@Model.Department</dd>
+
+                        <dt class="col-sm-4 fw-semibold">Job Title</dt>
+                        <dd class="col-sm-8">@Model.JobTitle</dd>
+
+                        <dt class="col-sm-4 fw-semibold">Salary</dt>
+                        <dd class="col-sm-8">@Model.Salary.ToString("N2")</dd>
+
+                        <dt class="col-sm-4 fw-semibold">Date of Joining</dt>
+                        <dd class="col-sm-8">
+                            @(Model.DateOfJoining.HasValue
+                                ? Model.DateOfJoining.Value.ToString("dd MMM yyyy")
+                                : "N/A")
+                        </dd>
+
+                        <dt class="col-sm-4 fw-semibold">Contact Number</dt>
+                        <dd class="col-sm-8">@Model.ContactNumber</dd>
+                    </dl>
+                </div>
+                <div class="card-footer bg-light text-left">
+                    <a asp-action="Index" class="btn btn-outline-primary">
+                        <i class="fas fa-arrow-left me-2"></i>Back to List
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

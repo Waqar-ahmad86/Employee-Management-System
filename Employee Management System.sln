@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35728.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMSWebApi", "EMSWebApi\EMSWebApi.csproj", "{3B5199F7-6B61-4BEC-8AC6-8D50378D39C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMSMvc", "EMSMvc\EMSMvc.csproj", "{1B853ED3-E5F4-4F97-9902-9D0CEE48219D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMSWebApi.Infrastructure", "EMSWebApi.Infrastructure\EMSWebApi.Infrastructure.csproj", "{56D5CDC5-5043-4889-A3D3-5FEB4943C4C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMSWebApi.Domain", "EMSWebApi.Domain\EMSWebApi.Domain.csproj", "{8A769A6D-C4AF-43B7-ACAD-C440CA5EBF1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMSWebApi.Application", "EMSWebApi.Application\EMSWebApi.Application.csproj", "{4D4F6222-4BC5-45FB-A691-5711B4F5B6D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMS.Common", "EMS.Common\EMS.Common.csproj", "{87E09EE4-686E-44AC-935F-F2DC0BB9CF29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B5199F7-6B61-4BEC-8AC6-8D50378D39C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B5199F7-6B61-4BEC-8AC6-8D50378D39C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B5199F7-6B61-4BEC-8AC6-8D50378D39C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B5199F7-6B61-4BEC-8AC6-8D50378D39C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B853ED3-E5F4-4F97-9902-9D0CEE48219D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B853ED3-E5F4-4F97-9902-9D0CEE48219D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B853ED3-E5F4-4F97-9902-9D0CEE48219D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B853ED3-E5F4-4F97-9902-9D0CEE48219D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56D5CDC5-5043-4889-A3D3-5FEB4943C4C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D5CDC5-5043-4889-A3D3-5FEB4943C4C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D5CDC5-5043-4889-A3D3-5FEB4943C4C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D5CDC5-5043-4889-A3D3-5FEB4943C4C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A769A6D-C4AF-43B7-ACAD-C440CA5EBF1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A769A6D-C4AF-43B7-ACAD-C440CA5EBF1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A769A6D-C4AF-43B7-ACAD-C440CA5EBF1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A769A6D-C4AF-43B7-ACAD-C440CA5EBF1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D4F6222-4BC5-45FB-A691-5711B4F5B6D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D4F6222-4BC5-45FB-A691-5711B4F5B6D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D4F6222-4BC5-45FB-A691-5711B4F5B6D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D4F6222-4BC5-45FB-A691-5711B4F5B6D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87E09EE4-686E-44AC-935F-F2DC0BB9CF29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87E09EE4-686E-44AC-935F-F2DC0BB9CF29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87E09EE4-686E-44AC-935F-F2DC0BB9CF29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87E09EE4-686E-44AC-935F-F2DC0BB9CF29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

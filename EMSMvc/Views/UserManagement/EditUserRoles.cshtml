@@ -1,0 +1,48 @@
+﻿@model EMSMvc.ViewModels.EditUserRolesVM
+@{
+    ViewData["Title"] = "Assign User Role";
+}
+
+<h2 class="mb-4 fw-bold">Assign User Role</h2>
+
+<hr />
+<partial name="_StatusMessages" />
+<h4 class="mb-5">Username: @Model.FullName</h4>
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="EditUserRoles" method="post">
+            @Html.AntiForgeryToken()
+            <input type="hidden" asp-for="UserId" />
+            <input type="hidden" asp-for="UserName" />
+            <input type="hidden" asp-for="FullName" />
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Assign Role:</label>
+                @if (Model.AllRoles != null && Model.AllRoles.Any())
+                {
+                    @foreach (var role in Model.AllRoles)
+                    {
+                        <div class="form-check">
+                            <input type="radio" name="UserRoles" value="@role"
+                                   class="form-check-input" id="role-@role"
+                            @(Model.UserRoles != null && Model.UserRoles.Contains(role) ? "checked" : "") />
+                            <label class="form-check-label" for="role-@role">@role</label>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p class="text-muted">No roles available in the system.</p>
+                }
+            </div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <button type="submit" class="btn btn-primary">Update Role</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

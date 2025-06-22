@@ -1,0 +1,109 @@
+﻿@using EMS.Common.Enums
+@using EMSMvc.Core.Application.DTOs
+@model IEnumerable<LeaveApplication>
+@{
+    ViewData["Title"] = "My Leave Applications";
+    string filterStartDate = ViewBag.FilterStartDate;
+    string filterEndDate = ViewBag.FilterEndDate;
+}
+
+<h2 class="mb-4 fw-bold">My Leave Applications</h2>
+
+<partial name="_StatusMessages" />
+
+<p>
+    <a asp-action="Apply" class="btn btn-success"><i class="fas fa-plus me-2"></i>Apply Leave</a>
+</p>
+
+<form method="get" asp-action="MyApplications" class="row g-3 mb-3 align-items-end">
+    <div class="col-md-4">
+        <label for="startDate" class="form-label">From Date:</label>
+        <input type="date" name="startDate" id="startDate" value="@filterStartDate" class="form-control form-control-sm" />
+    </div>
+    <div class="col-md-4">
+        <label for="endDate" class="form-label">To Date:</label>
+        <input type="date" name="endDate" id="endDate" value="@filterEndDate" class="form-control form-control-sm" />
+    </div>
+    <div class="col-md-2">
+        <button type="submit" class="btn btn-primary btn-sm w-100">Filter</button>
+    </div>
+    <div class="col-md-2">
+        <a asp-action="MyApplications" class="btn btn-outline-secondary btn-sm w-100">Clear Filters</a>
+    </div>
+</form>
+
+@if (Model != null && Model.Any())
+{
+    <table id="myLeaveApplicationsTable" class="table table-striped table-hover table-sm">
+        <thead class="table-dark">
+            <tr>
+                <th>Sr. No.</th>
+                <th>@Html.DisplayNameFor(model => model.First().LeaveTypeName)</th>
+                <th>@Html.DisplayNameFor(model => model.First().StartDate)</th>
+                <th>@Html.DisplayNameFor(model => model.First().EndDate)</th>
+                <th>@Html.DisplayNameFor(model => model.First().NumberOfDays)</th>
+                <th>@Html.DisplayNameFor(model => model.First().Reason)</th>
+                <th>@Html.DisplayNameFor(model => model.First().Status)</th>
+                <th>@Html.DisplayNameFor(model => model.First().AppliedDate)</th>
+                @*<th>Actions</th>*@
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int srNoMyLeave = 1;
+            }
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@(srNoMyLeave++)</td>
+                    <td>@item.LeaveTypeName</td>
+                    <td>@item.StartDate.ToString("dd-MM-yyyy")</td>
+                    <td>@item.EndDate.ToString("dd-MM-yyyy")</td>
+                    <td class="text-center">@item.NumberOfDays</td>
+                    <td>
+                        <span title="@item.Reason">
+                            @(item.Reason.Length > 25 ? item.Reason.Substring(0, 25) + "..." : item.Reason)
+                        </span>
+                    </td>
+                    <td>
+                        <span class="badge bg-@GetStatusBadgeClass(item.Status) fs-7">@item.StatusString</span>
+                    </td>
+                    <td>@item.AppliedDate.ToString("dd-MM-yyyy")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <div class="alert alert-info">You have no leave applications for the selected period.</div>
+}
+
+@{
+    string GetStatusBadgeClass(LeaveApplicationStatus status)
+    {
+        return status switch
+        {
+            LeaveApplicationStatus.Pending => "warning text-dark",
+            LeaveApplicationStatus.Approved => "success",
+            LeaveApplicationStatus.Rejected => "danger",
+            LeaveApplicationStatus.Cancelled => "secondary",
+            _ => "light text-dark",
+        };
+    }
+}
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#myLeaveApplicationsTable').DataTable({
+                "pageLength": 10,
+                "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+                 "columnDefs": [
+                    { "orderable": false, "targets": [0] }
+                ],
+                "order": [[7, "desc"]]
+            });
+        });
+    </script>
+}

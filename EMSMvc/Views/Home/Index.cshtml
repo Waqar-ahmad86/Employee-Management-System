@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link href="~/css/home.css" rel="stylesheet" />
+
+<div class="container-fluid bg-light py-4">
+    <div class="text-center px-3">
+        <h2 class="fw-semibold text-primary mb-2">Welcome to WebApiDemoMvc</h2>
+        <p class="text-muted mb-3">
+            A secure ASP.NET Core app with JWT authentication.
+        </p>
+        <a href="@Url.Action("Index", "Employee")" class="btn btn-primary btn-md px-3 py-2">View Employees</a>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+            <div class="card shadow-sm border-0 rounded-lg">
+                <div class="card-header bg-dark text-white text-center py-3">
+                    <h4 class="mb-0">How to Use</h4>
+                </div>
+                <div class="card-body p-4">
+                    <h5 class="text-muted">Getting Started</h5>
+                    <p>
+                        Log in with your credentials to access employee records and manage your profile.
+                        Authentication is handled securely using JWT tokens.
+                    </p>
+                    <h5 class="text-muted mt-4">Key Features</h5>
+                    <ul class="mb-0">
+                        <li>Secure JWT authentication</li>
+                        <li>Live data interactions</li>
+                        <li>Responsive design on all devices</li>
+                        <li>User-friendly interface</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

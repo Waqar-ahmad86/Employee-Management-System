@@ -1,0 +1,132 @@
+﻿@using EMSMvc.Core.Application.DTOs
+@model IEnumerable<Notice>
+
+@{
+    ViewData["Title"] = "Manage Notices";
+    int srNo = 1;
+}
+
+<h2 class="mb-3 fw-bold">@ViewData["Title"]</h2>
+<partial name="_StatusMessages" />
+
+<p>
+    <a asp-action="Create" class="button">
+        <span class="button__text">Create</span>
+        <span class="button__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round"
+                 stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg">
+                <line y2="19" y1="5" x2="12" x1="12"></line>
+                <line y2="12" y1="12" x2="19" x1="5"></line>
+            </svg>
+        </span>
+    </a>
+</p>
+
+<table id="noticesTable" class="table table-striped table-bordered table-sm">
+    <thead class="table-dark">
+        <tr>
+            <th>Sr. No.</th>
+            <th>Title</th>
+            <th>Audience</th>
+            <th>Created At</th>
+            <th>Expires At</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var item in Model)
+            {
+                <tr id="notice-row-@item.Id">
+                    <td>@(srNo++)</td>
+                    <td>@item.Title</td>
+                    <td>@item.AudienceString</td>
+                    <td>@item.CreatedAt.ToString("dd MMM yy, HH:mm")</td>
+                    <td>@(item.ExpiresAt.HasValue ? item.ExpiresAt.Value.ToString("dd MMM yy, HH:mm") : "Never")</td>
+                    <td>
+                        @if (item.IsActive && (!item.ExpiresAt.HasValue || item.ExpiresAt > DateTime.UtcNow))
+                        {
+                            <span class="badge bg-success">Active</span>
+                        }
+                        else if (item.IsActive && item.ExpiresAt.HasValue && item.ExpiresAt <= DateTime.UtcNow)
+                        {
+                            <span class="badge bg-warning text-dark">Expired</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">Inactive</span>
+                        }
+                    </td>
+                    <td class="text-center">
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm" title="Edit">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                        <button class="btn btn-danger btn-sm delete-notice-btn" data-id="@item.Id" title="Delete">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr><td colspan="7" class="text-center text-muted">No notices found.</td></tr>
+        }
+    </tbody>
+</table>
+
+@Html.AntiForgeryToken()
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#noticesTable').DataTable({
+                "pageLength": 10,
+                "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+                "columnDefs": [
+                    { "orderable": false, "targets": [0, 6] }
+                ],
+                "order": [[3, "desc"]] // Order by Created At descending
+            });
+
+            $(document).on('click', '.delete-notice-btn', function () {
+                var noticeId = $(this).data('id');
+                Swal.fire({
+                    title: 'Are you sure?',
+                    text: "This action will delete the notice permanently!",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#d33',
+                    cancelButtonColor: '#3085d6',
+                    confirmButtonText: 'Yes, delete it!',
+                    cancelButtonText: 'No, cancel!'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        var token = $('input[name="__RequestVerificationToken"]').val();
+                        $.ajax({
+                            url: '@Url.Action("DeleteNoticeConfirmed", "Notices")',
+                            type: 'POST',
+                            data: { id: noticeId },
+                            headers: { "RequestVerificationToken": token },
+                            success: function (response) {
+                                if (response.success) {
+                                    Swal.fire('Deleted!', response.message, 'success');
+                                    $('#notice-row-' + noticeId).fadeOut(function() {
+                                         $('#noticesTable').DataTable().row($(this)).remove().draw(false);
+                                    });
+                                } else {
+                                    Swal.fire('Error!', response.message, 'error');
+                                }
+                            },
+                            error: function (xhr) {
+                                Swal.fire('Error!', 'Failed to delete notice. ' + xhr.responseText, 'error');
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+}

@@ -1,0 +1,55 @@
+﻿@using EMSMvc.ViewModels
+@model UserProfileVM
+
+@{
+    ViewData["Title"] = "User Profile";
+}
+
+<link href="~/css/profile.css" rel="stylesheet" asp-append-version="true" />
+
+<div class="profile-page-container">
+    <div class="row justify-content-center">
+        <div class="col-lg-7 col-md-9">
+            <div class="card profile-card shadow-sm">
+                <div class="card-header profile-card-header text-center">
+                    <i class="fas fa-user-circle fa-3x profile-header-icon mb-2"></i>
+                    <h2 class="profile-title">@ViewData["Title"]</h2>
+                </div>
+                <div class="card-body profile-card-body">
+                    <ul class="list-group list-group-flush profile-details-list">
+                        <li class="list-group-item">
+                            <div class="profile-detail-item">
+                                <span class="profile-detail-label"><i class="fas fa-user fa-fw me-2"></i>Full Name:</span>
+                                <span class="profile-detail-value">@Model.FullName</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="profile-detail-item">
+                                <span class="profile-detail-label"><i class="fas fa-at fa-fw me-2"></i>Username:</span>
+                                <span class="profile-detail-value">@Model.Username</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="profile-detail-item">
+                                <span class="profile-detail-label"><i class="fas fa-envelope fa-fw me-2"></i>Email:</span>
+                                <span class="profile-detail-value">@Model.Email</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="profile-detail-item">
+                                <span class="profile-detail-label"><i class="fas fa-user-tag fa-fw me-2"></i>Role:</span>
+                                <span class="profile-detail-value profile-role-badge">@Model.Role</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <hr class="my-4" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
