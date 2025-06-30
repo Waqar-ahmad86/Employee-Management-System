@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EMSWebApi.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+809124c09a55be421494395a8be88410be7853d5")]
 [assembly: System.Reflection.AssemblyProductAttribute("EMSWebApi.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EMSWebApi.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

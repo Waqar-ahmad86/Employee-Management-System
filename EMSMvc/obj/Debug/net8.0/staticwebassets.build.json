@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "awvWDDHsHlqIpBs8lQlm9ggn9vsjqa4FFlk+NnpmI4k=",
+  "Hash": "Jmno1MxlU0RdxbhItmEV7PTJ4hSkE1dBGqt8l+vGHHE=",
   "Source": "EMSMvc",
   "BasePath": "_content/EMSMvc",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "EMSMvc\\wwwroot",
       "Source": "EMSMvc",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\obj\\Debug\\net8.0\\scopedcss\\bundle\\EMSMvc.styles.css",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\obj\\Debug\\net8.0\\scopedcss\\bundle\\EMSMvc.styles.css",
       "SourceId": "EMSMvc",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "EMSMvc#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "ghXongaoaR8a0wCi4BHZri0N/RH7BucqGUO0bcA1jS4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Employee Management System\\EMSMvc\\obj\\Debug\\net8.0\\scopedcss\\bundle\\EMSMvc.styles.css"
+      "OriginalItemSpec": "D:\\Development\\Employee-Management-System\\EMSMvc\\obj\\Debug\\net8.0\\scopedcss\\bundle\\EMSMvc.styles.css"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\EMSMvc.bundle.scp.css",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\EMSMvc.bundle.scp.css",
       "SourceId": "EMSMvc",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "EMSMvc#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -56,13 +56,13 @@
       "Integrity": "ghXongaoaR8a0wCi4BHZri0N/RH7BucqGUO0bcA1jS4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Employee Management System\\EMSMvc\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\EMSMvc.bundle.scp.css"
+      "OriginalItemSpec": "D:\\Development\\Employee-Management-System\\EMSMvc\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\EMSMvc.bundle.scp.css"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\css\\dashboard.css",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\css\\dashboard.css",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "css/dashboard#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\css\\dashboard.css"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\css\\home.css",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\css\\home.css",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "css/home#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\css\\home.css"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\css\\loader.css",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\css\\loader.css",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "css/loader#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\css\\loader.css"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\css\\notifications.css",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\css\\notifications.css",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "css/notifications#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\css\\notifications.css"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\css\\profile.css",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\css\\profile.css",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "css/profile#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -164,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\css\\profile.css"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\css\\sidebar.css",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\css\\sidebar.css",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "css/sidebar#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -185,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\css\\sidebar.css"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\css\\site.css",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\css\\site.css",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -199,17 +199,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "luh4lj6x5v",
-      "Integrity": "o8vWu3gYGdjxkWXNbNlxlzRAhbuEXfUmc/yy+tA8U6A=",
+      "Fingerprint": "e92vt1j1va",
+      "Integrity": "zpGUi9cEMMao4MGJzmyQSa6kaNGSoyBIct3wFNGVBwI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\favicon.ico",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\favicon.ico",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
@@ -227,10 +227,52 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\images\\Login Register Background.jpg",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\images\\AuthBackground.jpg",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
+      "BasePath": "_content/EMSMvc",
+      "RelativePath": "images/AuthBackground#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wmts5bwhtn",
+      "Integrity": "CPYWzwJOs94EKMX3XKqXs7NdVizZCuesIFAkY/257TY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\AuthBackground.jpg"
+    },
+    {
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\images\\elevated-view-laptop-stationeries-blue-backdrop.jpg",
+      "SourceId": "EMSMvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
+      "BasePath": "_content/EMSMvc",
+      "RelativePath": "images/elevated-view-laptop-stationeries-blue-backdrop#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xt4wcpaxxo",
+      "Integrity": "i6+da6zlCjbsFafJQudN2YfPKN0EZ7OHjK+hOoHb1fU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\elevated-view-laptop-stationeries-blue-backdrop.jpg"
+    },
+    {
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\images\\Login Register Background.jpg",
+      "SourceId": "EMSMvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "images/Login Register Background#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -248,10 +290,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Login Register Background.jpg"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\apply-leave.js",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\apply-leave.js",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "js/apply-leave#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -269,10 +311,10 @@
       "OriginalItemSpec": "wwwroot\\js\\apply-leave.js"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\attendance-report.js",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\attendance-report.js",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "js/attendance-report#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -290,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\js\\attendance-report.js"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\dashboard.js",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\dashboard.js",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "js/dashboard#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -311,10 +353,10 @@
       "OriginalItemSpec": "wwwroot\\js\\dashboard.js"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\employee-index.js",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\employee-index.js",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "js/employee-index#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -332,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\js\\employee-index.js"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\loader.js",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\loader.js",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "js/loader#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -353,10 +395,10 @@
       "OriginalItemSpec": "wwwroot\\js\\loader.js"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\monthly-report.js",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\monthly-report.js",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "js/monthly-report#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -374,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\js\\monthly-report.js"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\my-daily-attendance.js",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\my-daily-attendance.js",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "js/my-daily-attendance#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -395,10 +437,10 @@
       "OriginalItemSpec": "wwwroot\\js\\my-daily-attendance.js"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\notifications.js",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\notifications.js",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "js/notifications#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -416,10 +458,10 @@
       "OriginalItemSpec": "wwwroot\\js\\notifications.js"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\site.js",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\site.js",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "js/site#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -437,10 +479,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\user-management.js",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\user-management.js",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "js/user-management#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -458,10 +500,10 @@
       "OriginalItemSpec": "wwwroot\\js\\user-management.js"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -479,10 +521,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -500,10 +542,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -521,10 +563,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -542,10 +584,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -563,10 +605,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -584,10 +626,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -605,10 +647,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -626,10 +668,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -647,10 +689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -668,10 +710,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -689,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -710,10 +752,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -731,10 +773,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -752,10 +794,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -773,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -794,10 +836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -815,10 +857,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -836,10 +878,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -857,10 +899,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -878,10 +920,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -899,10 +941,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -920,10 +962,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -941,10 +983,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -962,10 +1004,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -983,10 +1025,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1004,10 +1046,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1025,10 +1067,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1046,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1067,10 +1109,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1088,10 +1130,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1109,10 +1151,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1130,10 +1172,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1151,10 +1193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1172,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1193,10 +1235,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1214,10 +1256,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1235,10 +1277,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1256,10 +1298,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1277,10 +1319,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1298,10 +1340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1319,10 +1361,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1340,10 +1382,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1361,10 +1403,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1382,10 +1424,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/bootstrap/LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
@@ -1403,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/jquery/dist/jquery#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1424,10 +1466,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1445,10 +1487,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1466,10 +1508,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/jquery/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1487,10 +1529,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/jquery-validation/dist/additional-methods#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1508,10 +1550,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1529,10 +1571,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1550,10 +1592,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1571,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint}]?.md",
       "AssetKind": "All",
@@ -1592,10 +1634,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1613,10 +1655,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1634,10 +1676,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "EMSMvc",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Employee Management System\\EMSMvc\\wwwroot\\",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
       "BasePath": "_content/EMSMvc",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1658,7 +1700,7 @@
   "Endpoints": [
     {
       "Route": "css/dashboard.9tr6o8etbr.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\css\\dashboard.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\css\\dashboard.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1703,7 +1745,7 @@
     },
     {
       "Route": "css/dashboard.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\css\\dashboard.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\css\\dashboard.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1740,7 +1782,7 @@
     },
     {
       "Route": "css/home.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\css\\home.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\css\\home.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1777,7 +1819,7 @@
     },
     {
       "Route": "css/home.mq9jqqx8vq.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\css\\home.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\css\\home.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1822,7 +1864,7 @@
     },
     {
       "Route": "css/loader.2d8z6e98fj.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\css\\loader.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\css\\loader.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1867,7 +1909,7 @@
     },
     {
       "Route": "css/loader.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\css\\loader.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\css\\loader.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1904,7 +1946,7 @@
     },
     {
       "Route": "css/notifications.62rq84d48o.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\css\\notifications.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\css\\notifications.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1949,7 +1991,7 @@
     },
     {
       "Route": "css/notifications.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\css\\notifications.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\css\\notifications.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1986,7 +2028,7 @@
     },
     {
       "Route": "css/profile.akntlmb5cf.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\css\\profile.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\css\\profile.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2031,7 +2073,7 @@
     },
     {
       "Route": "css/profile.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\css\\profile.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\css\\profile.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2068,7 +2110,7 @@
     },
     {
       "Route": "css/sidebar.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\css\\sidebar.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\css\\sidebar.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2105,7 +2147,7 @@
     },
     {
       "Route": "css/sidebar.ysdrkspxkw.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\css\\sidebar.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\css\\sidebar.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2150,7 +2192,7 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\css\\site.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2167,11 +2209,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"o8vWu3gYGdjxkWXNbNlxlzRAhbuEXfUmc/yy+tA8U6A=\""
+          "Value": "\"zpGUi9cEMMao4MGJzmyQSa6kaNGSoyBIct3wFNGVBwI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Jun 2025 10:57:41 GMT"
+          "Value": "Mon, 23 Jun 2025 07:29:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2181,13 +2223,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-o8vWu3gYGdjxkWXNbNlxlzRAhbuEXfUmc/yy+tA8U6A="
+          "Value": "sha256-zpGUi9cEMMao4MGJzmyQSa6kaNGSoyBIct3wFNGVBwI="
         }
       ]
     },
     {
-      "Route": "css/site.luh4lj6x5v.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\css\\site.css",
+      "Route": "css/site.e92vt1j1va.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2204,11 +2246,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"o8vWu3gYGdjxkWXNbNlxlzRAhbuEXfUmc/yy+tA8U6A=\""
+          "Value": "\"zpGUi9cEMMao4MGJzmyQSa6kaNGSoyBIct3wFNGVBwI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Jun 2025 10:57:41 GMT"
+          "Value": "Mon, 23 Jun 2025 07:29:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2218,7 +2260,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "luh4lj6x5v"
+          "Value": "e92vt1j1va"
         },
         {
           "Name": "label",
@@ -2226,13 +2268,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-o8vWu3gYGdjxkWXNbNlxlzRAhbuEXfUmc/yy+tA8U6A="
+          "Value": "sha256-zpGUi9cEMMao4MGJzmyQSa6kaNGSoyBIct3wFNGVBwI="
         }
       ]
     },
     {
       "Route": "EMSMvc.bundle.scp.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\EMSMvc.bundle.scp.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\EMSMvc.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2269,7 +2311,7 @@
     },
     {
       "Route": "EMSMvc.styles.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\obj\\Debug\\net8.0\\scopedcss\\bundle\\EMSMvc.styles.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\obj\\Debug\\net8.0\\scopedcss\\bundle\\EMSMvc.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2306,7 +2348,7 @@
     },
     {
       "Route": "EMSMvc.y4twmt9fb8.bundle.scp.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\EMSMvc.bundle.scp.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\EMSMvc.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2351,7 +2393,7 @@
     },
     {
       "Route": "EMSMvc.y4twmt9fb8.styles.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\obj\\Debug\\net8.0\\scopedcss\\bundle\\EMSMvc.styles.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\obj\\Debug\\net8.0\\scopedcss\\bundle\\EMSMvc.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2396,7 +2438,7 @@
     },
     {
       "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\favicon.ico",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2441,7 +2483,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\favicon.ico",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2477,8 +2519,172 @@
       ]
     },
     {
+      "Route": "images/AuthBackground.jpg",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\images\\AuthBackground.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1411735"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CPYWzwJOs94EKMX3XKqXs7NdVizZCuesIFAkY/257TY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Jun 2025 07:05:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CPYWzwJOs94EKMX3XKqXs7NdVizZCuesIFAkY/257TY="
+        }
+      ]
+    },
+    {
+      "Route": "images/AuthBackground.wmts5bwhtn.jpg",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\images\\AuthBackground.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1411735"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CPYWzwJOs94EKMX3XKqXs7NdVizZCuesIFAkY/257TY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Jun 2025 07:05:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wmts5bwhtn"
+        },
+        {
+          "Name": "label",
+          "Value": "images/AuthBackground.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CPYWzwJOs94EKMX3XKqXs7NdVizZCuesIFAkY/257TY="
+        }
+      ]
+    },
+    {
+      "Route": "images/elevated-view-laptop-stationeries-blue-backdrop.jpg",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\images\\elevated-view-laptop-stationeries-blue-backdrop.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7881933"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"i6+da6zlCjbsFafJQudN2YfPKN0EZ7OHjK+hOoHb1fU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Jun 2025 07:13:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-i6+da6zlCjbsFafJQudN2YfPKN0EZ7OHjK+hOoHb1fU="
+        }
+      ]
+    },
+    {
+      "Route": "images/elevated-view-laptop-stationeries-blue-backdrop.xt4wcpaxxo.jpg",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\images\\elevated-view-laptop-stationeries-blue-backdrop.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7881933"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"i6+da6zlCjbsFafJQudN2YfPKN0EZ7OHjK+hOoHb1fU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Jun 2025 07:13:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xt4wcpaxxo"
+        },
+        {
+          "Name": "label",
+          "Value": "images/elevated-view-laptop-stationeries-blue-backdrop.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-i6+da6zlCjbsFafJQudN2YfPKN0EZ7OHjK+hOoHb1fU="
+        }
+      ]
+    },
+    {
       "Route": "images/Login Register Background.6i3i2js3js.jpg",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\images\\Login Register Background.jpg",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\images\\Login Register Background.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2523,7 +2729,7 @@
     },
     {
       "Route": "images/Login Register Background.jpg",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\images\\Login Register Background.jpg",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\images\\Login Register Background.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2560,7 +2766,7 @@
     },
     {
       "Route": "js/apply-leave.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\apply-leave.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\apply-leave.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2597,7 +2803,7 @@
     },
     {
       "Route": "js/apply-leave.ljggzfxmus.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\apply-leave.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\apply-leave.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2642,7 +2848,7 @@
     },
     {
       "Route": "js/attendance-report.fmya5lwqki.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\attendance-report.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\attendance-report.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2687,7 +2893,7 @@
     },
     {
       "Route": "js/attendance-report.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\attendance-report.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\attendance-report.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2724,7 +2930,7 @@
     },
     {
       "Route": "js/dashboard.7xrctax382.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\dashboard.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\dashboard.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2769,7 +2975,7 @@
     },
     {
       "Route": "js/dashboard.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\dashboard.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\dashboard.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2806,7 +3012,7 @@
     },
     {
       "Route": "js/employee-index.4b2pvylrjv.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\employee-index.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\employee-index.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2851,7 +3057,7 @@
     },
     {
       "Route": "js/employee-index.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\employee-index.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\employee-index.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2888,7 +3094,7 @@
     },
     {
       "Route": "js/loader.0cdwhuec82.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\loader.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\loader.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2933,7 +3139,7 @@
     },
     {
       "Route": "js/loader.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\loader.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\loader.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2970,7 +3176,7 @@
     },
     {
       "Route": "js/monthly-report.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\monthly-report.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\monthly-report.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3007,7 +3213,7 @@
     },
     {
       "Route": "js/monthly-report.zzwg0trs4c.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\monthly-report.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\monthly-report.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3052,7 +3258,7 @@
     },
     {
       "Route": "js/my-daily-attendance.9ulrks1a3s.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\my-daily-attendance.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\my-daily-attendance.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3097,7 +3303,7 @@
     },
     {
       "Route": "js/my-daily-attendance.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\my-daily-attendance.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\my-daily-attendance.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3134,7 +3340,7 @@
     },
     {
       "Route": "js/notifications.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\notifications.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\notifications.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3171,7 +3377,7 @@
     },
     {
       "Route": "js/notifications.zju7zjj85g.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\notifications.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\notifications.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3216,7 +3422,7 @@
     },
     {
       "Route": "js/site.3r8b2a0bt1.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\site.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3261,7 +3467,7 @@
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\site.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3298,7 +3504,7 @@
     },
     {
       "Route": "js/user-management.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\user-management.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\user-management.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3335,7 +3541,7 @@
     },
     {
       "Route": "js/user-management.tbkcliwf7o.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\js\\user-management.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\user-management.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3380,7 +3586,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3417,7 +3623,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.73kdqttayv.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3462,7 +3668,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3499,7 +3705,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.bpk8xqwxhs.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3544,7 +3750,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3581,7 +3787,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3626,7 +3832,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3663,7 +3869,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.mpyigms19s.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3708,7 +3914,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3745,7 +3951,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.4gxs3k148c.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3790,7 +3996,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3827,7 +4033,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.9b9oa1qrmt.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3872,7 +4078,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3909,7 +4115,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.fctod5rc9n.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3954,7 +4160,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3991,7 +4197,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.ve6x09088i.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4036,7 +4242,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.agp80tu62r.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4081,7 +4287,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4118,7 +4324,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4155,7 +4361,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.st1cbwfwo5.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4200,7 +4406,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4237,7 +4443,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.5vj65cig9w.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4282,7 +4488,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4319,7 +4525,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.unj9p35syc.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4364,7 +4570,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4401,7 +4607,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.2q4vfeazbq.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4446,7 +4652,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4483,7 +4689,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4520,7 +4726,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4557,7 +4763,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.o371a8zbv2.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4602,7 +4808,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.n1oizzvkh6.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4647,7 +4853,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.q2ku51ktnl.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4692,7 +4898,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.7na4sro3qu.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4737,7 +4943,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4774,7 +4980,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.jeal3x0ldm.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4819,7 +5025,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4856,7 +5062,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4893,7 +5099,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4930,7 +5136,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.okkk44j0xs.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4975,7 +5181,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.f8imaxxbri.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5020,7 +5226,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.0wve5yxp74.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5065,7 +5271,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5102,7 +5308,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.cwzlr5n8x4.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5147,7 +5353,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5184,7 +5390,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5221,7 +5427,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5258,7 +5464,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.wmug9u23qg.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5303,7 +5509,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.npxfuf8dg6.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5348,7 +5554,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5385,7 +5591,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.j75batdsum.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5430,7 +5636,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5467,7 +5673,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.16095smhkz.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5512,7 +5718,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5549,7 +5755,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5586,7 +5792,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.vy0bq9ydhf.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5631,7 +5837,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.b4skse8du6.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5676,7 +5882,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5713,7 +5919,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.ab1c3rmv7g.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5758,7 +5964,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5795,7 +6001,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5832,7 +6038,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.56d2bn4wt9.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5877,7 +6083,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5914,7 +6120,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.u3xrusw2ol.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5959,7 +6165,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.tey0rigmnh.css",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6004,7 +6210,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6041,7 +6247,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.kbynt5jhd9.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6086,7 +6292,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6123,7 +6329,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.l2av4jpuoj.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6168,7 +6374,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.25iw1kog22.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6213,7 +6419,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6250,7 +6456,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.c2nslu3uf3.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6295,7 +6501,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6332,7 +6538,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6369,7 +6575,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.2lgwfvgpvi.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6414,7 +6620,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6451,7 +6657,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.m39kt2b5c9.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6496,7 +6702,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6533,7 +6739,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6570,7 +6776,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.wsezl0heh6.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6615,7 +6821,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.um2aeqy4ik.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6660,7 +6866,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6697,7 +6903,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.6ukhryfubh.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6742,7 +6948,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6779,7 +6985,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6816,7 +7022,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6853,7 +7059,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.u33ctipx7g.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6898,7 +7104,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.zwph15dxgs.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6943,7 +7149,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.o4kw7cc6tf.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6988,7 +7194,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7025,7 +7231,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE.81b7ukuj9c",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7070,7 +7276,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.fwhahm2icz.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7115,7 +7321,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7152,7 +7358,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.5pze98is44.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7197,7 +7403,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.dd6z7egasc.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7242,7 +7448,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7279,7 +7485,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.map",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7316,7 +7522,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.mlv21k5csn.txt",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7361,7 +7567,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.txt",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7398,7 +7604,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.ay5nd8zt9x.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7443,7 +7649,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7480,7 +7686,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.9oaff4kq20.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7525,7 +7731,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7562,7 +7768,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7599,7 +7805,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.b7iojwaux1.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7644,7 +7850,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7681,7 +7887,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.pzqfkb6aqo.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7726,7 +7932,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7763,7 +7969,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.x0q3zqp4vz.md",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7808,7 +8014,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.47otxtyo56.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7853,7 +8059,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7890,7 +8096,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.4v8eqarkd7.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7935,7 +8141,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7972,7 +8178,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.356vix0kms.txt",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8017,7 +8223,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "AssetFile": "D:\\Employee Management System\\EMSMvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
