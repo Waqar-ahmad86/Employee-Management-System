@@ -82,8 +82,8 @@ D:\Employee Management System\EMSMvc\bin\Debug\net8.0\EMS.Common.dll
 D:\Employee Management System\EMSMvc\bin\Debug\net8.0\EMS.Common.pdb
 D:\Development\Employee-Management-System\EMSMvc\bin\Debug\net8.0\appsettings.Development.json
 D:\Development\Employee-Management-System\EMSMvc\bin\Debug\net8.0\appsettings.json
-D:\Development\Employee-Management-System\EMSMvc\bin\Debug\net8.0\EMSMvc.staticwebassets.endpoints.json
 D:\Development\Employee-Management-System\EMSMvc\bin\Debug\net8.0\EMSMvc.staticwebassets.runtime.json
+D:\Development\Employee-Management-System\EMSMvc\bin\Debug\net8.0\EMSMvc.staticwebassets.endpoints.json
 D:\Development\Employee-Management-System\EMSMvc\bin\Debug\net8.0\EMSMvc.exe
 D:\Development\Employee-Management-System\EMSMvc\bin\Debug\net8.0\EMSMvc.deps.json
 D:\Development\Employee-Management-System\EMSMvc\bin\Debug\net8.0\EMSMvc.runtimeconfig.json

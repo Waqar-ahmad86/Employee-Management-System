@@ -18,6 +18,7 @@ wwwroot\js\monthly-report.js
 wwwroot\js\my-daily-attendance.js
 wwwroot\js\notifications.js
 wwwroot\js\site.js
+wwwroot\js\starfield.js
 wwwroot\js\user-management.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

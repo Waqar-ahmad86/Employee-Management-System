@@ -182,76 +182,187 @@ namespace EMSMvc.Infrastructure.Implementations
             string responseBody = GetRawResponseBodyFromHttpException(ex);
 
             if (string.IsNullOrWhiteSpace(responseBody))
-                return "An API error occurred, and no detailed message was available.";
+            {
+                // This could be a network error where no response body was received.
+                // The original exception message might be more helpful.
+                return ex.InnerException?.Message ?? ex.Message ?? "A network error occurred while contacting the API.";
+            }
 
+            // First, try to parse our specific ApiErrorResponse DTO.
             var apiError = TryParseApiError(responseBody);
             if (apiError?.Message is string msg && !string.IsNullOrWhiteSpace(msg))
             {
                 return msg;
             }
 
+            // --- Robust JSON Parsing Logic ---
             try
             {
-                JsonDocument doc = JsonDocument.Parse(responseBody);
-                JsonElement root = doc.RootElement;
-
-                if (root.ValueKind == JsonValueKind.Array)
+                // Attempt to parse as a generic JSON document
+                using (JsonDocument doc = JsonDocument.Parse(responseBody))
                 {
-                    var identityErrors = new List<string>();
-                    foreach (JsonElement item in root.EnumerateArray())
+                    JsonElement root = doc.RootElement;
+
+                    // Handle Identity errors (e.g., from registration) which return an array of error objects
+                    if (root.ValueKind == JsonValueKind.Array)
                     {
-                        if (item.TryGetProperty("description", out JsonElement descElement) &&
-                            descElement.ValueKind == JsonValueKind.String &&
-                            !string.IsNullOrEmpty(descElement.GetString()))
+                        var identityErrors = new List<string>();
+                        foreach (JsonElement item in root.EnumerateArray())
                         {
-                            identityErrors.Add(descElement.GetString()!);
-                        }
-                    }
-                    if (identityErrors.Any()) return string.Join(" ", identityErrors);
-                }
-
-                if (root.TryGetProperty("title", out JsonElement titleElement) &&
-                    titleElement.ValueKind == JsonValueKind.String &&
-                    !string.IsNullOrWhiteSpace(titleElement.GetString()))
-                {
-                    return titleElement.GetString()!;
-                }
-
-                if (root.TryGetProperty("message", out JsonElement messageElement) &&
-                    messageElement.ValueKind == JsonValueKind.String &&
-                    !string.IsNullOrWhiteSpace(messageElement.GetString()))
-                {
-                    return messageElement.GetString()!;
-                }
-
-                if (root.TryGetProperty("errors", out JsonElement errorsElement) &&
-                    errorsElement.ValueKind == JsonValueKind.Object)
-                {
-                    var errorMessages = new List<string>();
-                    foreach (JsonProperty property in errorsElement.EnumerateObject())
-                    {
-                        foreach (JsonElement error in property.Value.EnumerateArray())
-                        {
-                            if (error.ValueKind == JsonValueKind.String &&
-                                !string.IsNullOrWhiteSpace(error.GetString()))
+                            if (item.TryGetProperty("description", out JsonElement descElement) &&
+                                descElement.ValueKind == JsonValueKind.String &&
+                                !string.IsNullOrEmpty(descElement.GetString()))
                             {
-                                errorMessages.Add(error.GetString()!);
+                                identityErrors.Add(descElement.GetString()!);
                             }
                         }
+                        if (identityErrors.Any()) return string.Join(" ", identityErrors);
                     }
-                    if (errorMessages.Any()) return string.Join(" ", errorMessages);
+
+                    // Handle standard ASP.NET Core validation problem details (object)
+                    if (root.TryGetProperty("title", out JsonElement titleElement) &&
+                        titleElement.ValueKind == JsonValueKind.String &&
+                        !string.IsNullOrWhiteSpace(titleElement.GetString()))
+                    {
+                        // You can also check for "errors" property here for more details if you want
+                        return titleElement.GetString()!;
+                    }
+
+                    // Handle simple { "message": "..." } objects
+                    if (root.TryGetProperty("message", out JsonElement messageElement) &&
+                        messageElement.ValueKind == JsonValueKind.String &&
+                        !string.IsNullOrWhiteSpace(messageElement.GetString()))
+                    {
+                        return messageElement.GetString()!;
+                    }
+
+                    // Handle validation errors like { "errors": { "field": ["message"] } }
+                    if (root.TryGetProperty("errors", out JsonElement errorsElement) &&
+                        errorsElement.ValueKind == JsonValueKind.Object)
+                    {
+                        var errorMessages = new List<string>();
+                        foreach (JsonProperty property in errorsElement.EnumerateObject())
+                        {
+                            foreach (JsonElement error in property.Value.EnumerateArray())
+                            {
+                                if (error.ValueKind == JsonValueKind.String &&
+                                    !string.IsNullOrWhiteSpace(error.GetString()))
+                                {
+                                    errorMessages.Add(error.GetString()!);
+                                }
+                            }
+                        }
+                        if (errorMessages.Any()) return string.Join(" ", errorMessages);
+                    }
                 }
             }
             catch (JsonException)
             {
-                return responseBody.Length > 200 ? "An API error occurred (Non-JSON response)." : responseBody;
+                // --- THIS IS THE KEY FIX ---
+                // If it fails to parse as JSON, it's likely a plain string or HTML.
+                // In this case, just return the raw response body.
+                // We'll clean it up slightly to avoid showing a huge HTML page to the user.
+
+                // Simple check to avoid displaying a full HTML page in an alert
+                if (responseBody.Trim().StartsWith("<") && responseBody.Trim().EndsWith(">"))
+                {
+                    // Check for a title tag in the HTML which often contains a summary
+                    var match = System.Text.RegularExpressions.Regex.Match(responseBody, @"<title>\s*(.+?)\s*</title>");
+                    if (match.Success)
+                    {
+                        return $"Server error: {match.Groups[1].Value}";
+                    }
+                    return "A server error occurred (HTML response received).";
+                }
+
+                // If it's not HTML, return the raw text, truncated if it's too long.
+                return responseBody.Length > 250 ? responseBody.Substring(0, 250) + "..." : responseBody;
             }
-            catch
+            catch (Exception e)
             {
-                return "Could not parse the error response from the API.";
+                // Catch any other unexpected parsing errors
+                return $"Could not parse the error response from the API. Details: {e.Message}";
             }
-            return responseBody.Length > 200 ? "An API error occurred." : responseBody;
+
+            // If JSON parsing succeeded but we didn't find a known error structure, return the raw body as a fallback.
+            return responseBody.Length > 250 ? "An API error occurred." : responseBody;
         }
+
+        //public string ExtractErrorMessageFromHttpException(HttpRequestException ex)
+        //{
+        //    string responseBody = GetRawResponseBodyFromHttpException(ex);
+
+        //    if (string.IsNullOrWhiteSpace(responseBody))
+        //        return "An API error occurred, and no detailed message was available.";
+
+        //    var apiError = TryParseApiError(responseBody);
+        //    if (apiError?.Message is string msg && !string.IsNullOrWhiteSpace(msg))
+        //    {
+        //        return msg;
+        //    }
+
+        //    try
+        //    {
+        //        JsonDocument doc = JsonDocument.Parse(responseBody);
+        //        JsonElement root = doc.RootElement;
+
+        //        if (root.ValueKind == JsonValueKind.Array)
+        //        {
+        //            var identityErrors = new List<string>();
+        //            foreach (JsonElement item in root.EnumerateArray())
+        //            {
+        //                if (item.TryGetProperty("description", out JsonElement descElement) &&
+        //                    descElement.ValueKind == JsonValueKind.String &&
+        //                    !string.IsNullOrEmpty(descElement.GetString()))
+        //                {
+        //                    identityErrors.Add(descElement.GetString()!);
+        //                }
+        //            }
+        //            if (identityErrors.Any()) return string.Join(" ", identityErrors);
+        //        }
+
+        //        if (root.TryGetProperty("title", out JsonElement titleElement) &&
+        //            titleElement.ValueKind == JsonValueKind.String &&
+        //            !string.IsNullOrWhiteSpace(titleElement.GetString()))
+        //        {
+        //            return titleElement.GetString()!;
+        //        }
+
+        //        if (root.TryGetProperty("message", out JsonElement messageElement) &&
+        //            messageElement.ValueKind == JsonValueKind.String &&
+        //            !string.IsNullOrWhiteSpace(messageElement.GetString()))
+        //        {
+        //            return messageElement.GetString()!;
+        //        }
+
+        //        if (root.TryGetProperty("errors", out JsonElement errorsElement) &&
+        //            errorsElement.ValueKind == JsonValueKind.Object)
+        //        {
+        //            var errorMessages = new List<string>();
+        //            foreach (JsonProperty property in errorsElement.EnumerateObject())
+        //            {
+        //                foreach (JsonElement error in property.Value.EnumerateArray())
+        //                {
+        //                    if (error.ValueKind == JsonValueKind.String &&
+        //                        !string.IsNullOrWhiteSpace(error.GetString()))
+        //                    {
+        //                        errorMessages.Add(error.GetString()!);
+        //                    }
+        //                }
+        //            }
+        //            if (errorMessages.Any()) return string.Join(" ", errorMessages);
+        //        }
+        //    }
+        //    catch (JsonException)
+        //    {
+        //        return responseBody.Length > 200 ? "An API error occurred (Non-JSON response)." : responseBody;
+        //    }
+        //    catch
+        //    {
+        //        return "Could not parse the error response from the API.";
+        //    }
+        //    return responseBody.Length > 200 ? "An API error occurred." : responseBody;
+        //}
 
         public string GetRawResponseBodyFromHttpException(HttpRequestException ex)
         {

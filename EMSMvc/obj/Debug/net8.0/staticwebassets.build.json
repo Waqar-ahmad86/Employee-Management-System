@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Jmno1MxlU0RdxbhItmEV7PTJ4hSkE1dBGqt8l+vGHHE=",
+  "Hash": "L7ZqzS9K1WwNfXEOpC1x4MHg/ZgvHVNi0ov6BbuDhiQ=",
   "Source": "EMSMvc",
   "BasePath": "_content/EMSMvc",
   "Mode": "Default",
@@ -199,8 +199,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "e92vt1j1va",
-      "Integrity": "zpGUi9cEMMao4MGJzmyQSa6kaNGSoyBIct3wFNGVBwI=",
+      "Fingerprint": "slmuxh2inn",
+      "Integrity": "EO31wmQYpWWFpPhJT1tpbAxnbPGPvTwkXcqDelbWa00=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -477,6 +477,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\starfield.js",
+      "SourceId": "EMSMvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\",
+      "BasePath": "_content/EMSMvc",
+      "RelativePath": "js/starfield#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "636m7k2zfw",
+      "Integrity": "riCo5I/v1FXlKbDxFXRQXjTpCk1wFY9Le0O7Ap3m2rU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\starfield.js"
     },
     {
       "Identity": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\user-management.js",
@@ -2201,7 +2222,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9225"
+          "Value": "9452"
         },
         {
           "Name": "Content-Type",
@@ -2209,11 +2230,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zpGUi9cEMMao4MGJzmyQSa6kaNGSoyBIct3wFNGVBwI=\""
+          "Value": "\"EO31wmQYpWWFpPhJT1tpbAxnbPGPvTwkXcqDelbWa00=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 23 Jun 2025 07:29:09 GMT"
+          "Value": "Sun, 10 Aug 2025 12:33:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2223,12 +2244,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-zpGUi9cEMMao4MGJzmyQSa6kaNGSoyBIct3wFNGVBwI="
+          "Value": "sha256-EO31wmQYpWWFpPhJT1tpbAxnbPGPvTwkXcqDelbWa00="
         }
       ]
     },
     {
-      "Route": "css/site.e92vt1j1va.css",
+      "Route": "css/site.slmuxh2inn.css",
       "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2238,7 +2259,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9225"
+          "Value": "9452"
         },
         {
           "Name": "Content-Type",
@@ -2246,11 +2267,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zpGUi9cEMMao4MGJzmyQSa6kaNGSoyBIct3wFNGVBwI=\""
+          "Value": "\"EO31wmQYpWWFpPhJT1tpbAxnbPGPvTwkXcqDelbWa00=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 23 Jun 2025 07:29:09 GMT"
+          "Value": "Sun, 10 Aug 2025 12:33:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2260,7 +2281,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "e92vt1j1va"
+          "Value": "slmuxh2inn"
         },
         {
           "Name": "label",
@@ -2268,7 +2289,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-zpGUi9cEMMao4MGJzmyQSa6kaNGSoyBIct3wFNGVBwI="
+          "Value": "sha256-EO31wmQYpWWFpPhJT1tpbAxnbPGPvTwkXcqDelbWa00="
         }
       ]
     },
@@ -2295,7 +2316,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 16 Jun 2025 04:35:27 GMT"
+          "Value": "Sun, 10 Aug 2025 11:38:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2332,7 +2353,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 16 Jun 2025 04:35:27 GMT"
+          "Value": "Sun, 10 Aug 2025 11:38:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2369,7 +2390,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 16 Jun 2025 04:35:27 GMT"
+          "Value": "Sun, 10 Aug 2025 11:38:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2414,7 +2435,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 16 Jun 2025 04:35:27 GMT"
+          "Value": "Sun, 10 Aug 2025 11:38:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3499,6 +3520,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U="
+        }
+      ]
+    },
+    {
+      "Route": "js/starfield.636m7k2zfw.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\starfield.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1354"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"riCo5I/v1FXlKbDxFXRQXjTpCk1wFY9Le0O7Ap3m2rU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Aug 2025 12:33:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "636m7k2zfw"
+        },
+        {
+          "Name": "label",
+          "Value": "js/starfield.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-riCo5I/v1FXlKbDxFXRQXjTpCk1wFY9Le0O7Ap3m2rU="
+        }
+      ]
+    },
+    {
+      "Route": "js/starfield.js",
+      "AssetFile": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\starfield.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1354"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"riCo5I/v1FXlKbDxFXRQXjTpCk1wFY9Le0O7Ap3m2rU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Aug 2025 12:33:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-riCo5I/v1FXlKbDxFXRQXjTpCk1wFY9Le0O7Ap3m2rU="
         }
       ]
     },

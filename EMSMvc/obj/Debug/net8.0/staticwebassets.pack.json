@@ -85,6 +85,10 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\starfield.js",
+      "PackagePath": "staticwebassets\\js\\starfield.js"
+    },
+    {
       "Id": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\user-management.js",
       "PackagePath": "staticwebassets\\js\\user-management.js"
     },

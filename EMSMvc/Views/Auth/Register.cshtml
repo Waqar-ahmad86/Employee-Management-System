@@ -1,6 +1,8 @@
 ﻿@using EMSMvc.Core.Application.DTOs
 @model Register
 
+<canvas id="starfield"></canvas>
+
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-5">
@@ -61,12 +63,5 @@
 
 
 @section Scripts {
-    <style>
-        body {
-            background-image: url('/images/elevated-view-laptop-stationeries-blue-backdrop.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-    </style>
+    <script src="~/js/starfield.js"></script>
 }
