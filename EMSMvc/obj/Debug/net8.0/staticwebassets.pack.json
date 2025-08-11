@@ -37,18 +37,6 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\images\\AuthBackground.jpg",
-      "PackagePath": "staticwebassets\\images\\AuthBackground.jpg"
-    },
-    {
-      "Id": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\images\\Login Register Background.jpg",
-      "PackagePath": "staticwebassets\\images\\Login Register Background.jpg"
-    },
-    {
-      "Id": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\images\\elevated-view-laptop-stationeries-blue-backdrop.jpg",
-      "PackagePath": "staticwebassets\\images\\elevated-view-laptop-stationeries-blue-backdrop.jpg"
-    },
-    {
       "Id": "D:\\Development\\Employee-Management-System\\EMSMvc\\wwwroot\\js\\apply-leave.js",
       "PackagePath": "staticwebassets\\js\\apply-leave.js"
     },

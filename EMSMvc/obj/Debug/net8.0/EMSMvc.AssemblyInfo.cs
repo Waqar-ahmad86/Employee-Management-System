@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EMSMvc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+836a99a1b11f3c5cd46ded10a37ba70d62aa3f45")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+905adfd38569266c6d57c18c492ec457fe449a11")]
 [assembly: System.Reflection.AssemblyProductAttribute("EMSMvc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EMSMvc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

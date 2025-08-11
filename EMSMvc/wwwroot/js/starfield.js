@@ -22,15 +22,13 @@ function initStars() {
         });
     }
 }
-
 function drawStars() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = "#b1dae7";
+    ctx.fillStyle = "#000000";
+    ctx.shadowBlur = 0;
     stars.forEach(star => {
         ctx.beginPath();
         ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-        ctx.shadowBlur = 10;
-        ctx.shadowColor = "#b1dae7";
         ctx.fill();
     });
 }

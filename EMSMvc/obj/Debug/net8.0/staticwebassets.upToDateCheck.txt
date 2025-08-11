@@ -6,9 +6,6 @@ wwwroot\css\profile.css
 wwwroot\css\sidebar.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
-wwwroot\images\AuthBackground.jpg
-wwwroot\images\elevated-view-laptop-stationeries-blue-backdrop.jpg
-wwwroot\images\Login Register Background.jpg
 wwwroot\js\apply-leave.js
 wwwroot\js\attendance-report.js
 wwwroot\js\dashboard.js

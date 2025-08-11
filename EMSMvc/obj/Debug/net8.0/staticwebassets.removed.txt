@@ -1,1 +1,3 @@
-D:\Development\Employee-Management-System\EMSMvc\wwwroot\css\starfield.css
+D:\Development\Employee-Management-System\EMSMvc\wwwroot\images\AuthBackground.jpg
+D:\Development\Employee-Management-System\EMSMvc\wwwroot\images\elevated-view-laptop-stationeries-blue-backdrop.jpg
+D:\Development\Employee-Management-System\EMSMvc\wwwroot\images\Login Register Background.jpg
